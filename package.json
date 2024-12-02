@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "express-async-error": "^0.0.2",
-    "mongodb": "^6.11.0"
+    "mongodb": "^6.11.0",
+    "nodemon": "^3.1.7"
   }
 }
