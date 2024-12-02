@@ -9,15 +9,15 @@ app.get("/", (req, res) => {
 })
 
 app.post("/", (req, res) => {
-
+    res.send("Hello, Jamaal")
 })
 
 app.put("/", (req, res) => {
-
+    res.send("Hello, World")
 })
 
 app.delete("/", (req, res) => {
-
+    res.send("Books")
 })
 
 app.listen(port, () => {
