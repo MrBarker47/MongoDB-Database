@@ -2,11 +2,12 @@ const express = require("express");
 const app = express();
 const port = 4000;
 
+const data = require("./data/posts");
 
 
 //Creating routes
 app.get("/", (req, res) => {
-    res.send("Creating routes with express is simple");
+    res.send(data/posts);
 })
 
 app.post("/", (req, res) => {

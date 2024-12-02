@@ -23,4 +23,7 @@ const post = [
         title: "How To Win Friends & Influence People",
         author: "Dale Carngie"
     }
-]
+];
+
+module.exports = posts;
+
