@@ -7,7 +7,7 @@ const data = require("./data/posts");
 
 //Creating routes
 app.get("/", (req, res) => {
-    res.send(data/posts);
+    res.send("Hello");
 })
 
 app.post("/", (req, res) => {
