@@ -3,7 +3,8 @@ const app = express();
 const port = 4000;
 
 
-//Creatinf routes
+
+//Creating routes
 app.get("/", (req, res) => {
     res.send("Creating routes with express is simple");
 })
