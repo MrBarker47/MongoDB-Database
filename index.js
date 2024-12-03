@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 4000;
 
-const data = require("./data/posts");
+
 
 
 //Creating routes
