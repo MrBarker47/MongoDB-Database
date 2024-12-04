@@ -6,7 +6,7 @@ import newPosts from './data/posts.js'
 const app = express();
 const port = 4000;
 
-
+const connectionString = process.env.ATLAS_URI || "";
 app.use('/data', newPosts)
 
 //Creating routes
