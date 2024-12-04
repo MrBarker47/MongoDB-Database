@@ -1,5 +1,5 @@
 import express from 'express';
-import { MongoClient } from 'mongodb';
+import mongodb from 'mongodb';
 import bodyParser from 'body-parser';
 import newPosts from './data/posts.js'
 
