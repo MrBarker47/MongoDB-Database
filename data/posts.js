@@ -1,3 +1,5 @@
+import express from "express";
+const router = express.Router();
 
 const post = [
     {
@@ -26,4 +28,8 @@ const post = [
     }
 ];
 
+router.get('/', (req, res) => {
+    res.send(post);
+})
 
+export default router
