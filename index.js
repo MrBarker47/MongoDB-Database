@@ -11,7 +11,6 @@ app.use('/data', newPosts)
 
 //Creating routes
 app.get("/routes/index.js", (req, res) => {
-    console.log("Hello");
     res.send("Hello")
 })
 
