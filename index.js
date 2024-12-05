@@ -2,6 +2,7 @@ import express from 'express';
 import mongodb from 'mongodb';
 import bodyParser from 'body-parser';
 import newPosts from './data/posts.js'
+import routes from './routes/index.js'
 
 const app = express();
 const port = 4000;
