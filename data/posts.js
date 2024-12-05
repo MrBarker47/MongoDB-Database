@@ -1,8 +1,8 @@
 import express from "express";
-import { MongoClient } from 'mongodb';
+import mongodb from "mongodb"
 const router = express.Router();
 
-const post = [
+const users = [
     {
         id:1,
         userId: 1,
@@ -30,7 +30,7 @@ const post = [
 ];
 
 router.get('/', (req, res) => {
-    res.send(post);
+    res.send(users);
 })
 
 export default router
