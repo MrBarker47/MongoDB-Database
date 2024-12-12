@@ -1,10 +1,16 @@
-import express from 'express';
-import mongodb, { Db } from "mongodb"
-const router = express.Router();
+const mongoose = require('mongoose')
 
-router.get(":title", async (req, res) => {
-    let collection = await db.collection("posts");
-    let document = req.body;
-})
+const BookSchema = mongoose.Schema(
+    {
+        name: {
+            type: String,
+            required: [true, "Enter the book name"]
+        },
 
-
+        quantity: {
+            type: Number,
+            required: true,
+            default: 0
+        },
+    }
+);

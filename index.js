@@ -2,29 +2,28 @@ import express from 'express';
 import mongodb from 'mongodb';
 import bodyParser from 'body-parser';
 import newPosts from './data/posts.js'
-import routes from './routes/index.js'
+import mongoose from 'mongoose';
+
 
 const app = express();
-const port = 4000;
 
-const connectionString = process.env.ATLAS_URI || "";
+
+const port = process.env.PORT || "4020";
+
+mongoose.connect('mongodb+srv://MrBarker47:WfhpISelxhFNvZyD@mongopractice.mkbxl.mongodb.net/')
+  .then(() => {
+ console.log('Connected!')
+})
+.catch(() => {
+    console.log("Connection failed!");
+});
+
 app.use('/data', newPosts)
 
+
 //Creating routes
-app.get("/routes/index.js", (req, res) => {
-    res.send("Hello")
-})
-
-app.post("/", (req, res) => {
-    res.send("Hello, Jamaal")
-})
-
-app.put("/", (req, res) => {
-    res.send("Hello, World")
-})
-
-app.delete("/", (req, res) => {
-    res.send("Books")
+app.get("/", (req, res) => {
+    res.send("Hello Jamaal") 
 })
 
 app.listen(port, () => {
